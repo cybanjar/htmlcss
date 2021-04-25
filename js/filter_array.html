@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Array</title>
+</head>
+
+<body>
+    <p>Minimal umur: <input type="number" id="cekUmur" value="18"></p>
+    <button onclick="fungsi_filter()">Try it</button>
+    <p id="demo"></p>
+
+    <p id="diatas">Diatas</p>
+    
+    <script>
+	    let ages = [32, 33, 12, 40];
+
+	    function cek_anak(age) {
+	        return age >= document.getElementById("cekUmur").value;
+	    }
+
+	    function fungsi_filter() {
+	        // document.getElementById("demo").innerHTML = ages.filter(cek_anak);
+
+	        try{
+	        	document.getElementById("demo").innerHTML = ages.filter(cek_anak);
+	        } catch {
+	        	document.getElementById("diatas").innerHTML = ages.filter(cek_anak);
+	        }
+	    }
+    </script>
+</body>
+
+</html>
