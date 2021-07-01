@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan Js</title>
+</head>
+<body>
+    <span>counted lopp</span>
+    <ol>
+        <li>For</li>
+        <li>Foreach</li>
+        <li>Repeat</li>
+    </ol>
+
+    <span>uncounted loop</span>
+    <ol>
+        <li>While</li>
+        <li>Do/While</li>
+    </ol>
+
+    <script>
+        // for(let n=0; n<5; n++) {
+        //     document.write('<p>Perulangan ke ' + n + '</p>')
+        // }
+
+        // let ulangi = confirm("Apakah anda mau mengulangi?")
+        // let counter = 0;
+        // while(ulangi) {
+        //     let jawab = confirm("apakah mau di ulangi?")
+        //     counter++;
+        //     if(jawab == false) {
+        //         ulangi = false;
+        //     }
+        // }
+        // document.write("Perulangan sebanyak " + counter + " kali");
+
+        // let ulangi = confirm("Apakah mau mengulangi?");
+        // let counter = 0;
+        // do{
+        //     counter++;
+        //     ulangi = confirm("apakah and mengulangi?");
+        // } while (ulangi) {
+        //     document.write("Perulangan sebanyak " + counter);
+        // }
+
+        // let days = ["Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu", "Minggu"]; 
+        // days.forEach(function(day) {
+        //     document.write("<p>" + day + "</p>")
+        // })
+        
+        // let x = 0;
+        // document.write("<p> Repeat </p> ".repeat(3));
+
+        let ulangi = confirm("apakah anda ingin mengulang?");
+        let counter = 0;
+        while (ulangi) {
+            counter++;
+            let bintang = "*".repeat(counter) + "<br>";
+            document.write(counter + ": " + bintang);
+            ulangi = confirm("apakah anda ingin mengulang?");
+        }
+    </script>
+</body>
+</html>
