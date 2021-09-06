@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Adding object in array</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: green">Push Array to Object</h1>
+    <p>Click the button to add new elements to the array.</p>
+
+    <button onclick="pushFunction()">Add elements</button>
+
+    <p id="geeks"></p>
+
+    <script>
+        // let a = [{one: 'one'},{two: 'two'},];
+        // a.push({three: 'three'});
+        // console.log(a);
+
+        // let list = ['one', 'two',];
+        // document.getElementById('geeks').innerHTML = list;
+
+        // function pushFunction() {
+        //     list.push('three');
+        //     document.getElementById('geeks').innerHTML = list;
+        // }
+
+        let list = [
+            {
+                name: 'vue'
+            },
+            {
+                name: 'react'
+            },
+        ];
+        let data;
+        for (let i = 0; i < list.length; i++) {
+            const element = list[i];
+            console.log(element['name']);
+            data = element['name']
+        }
+        document.getElementById("geeks").innerHTML = data;
+        console.log(data);
+        function pushFunction() {
+            list.push([
+                {
+                    name: 'angular'
+                }
+            ]
+            );
+            document.getElementById('geeks').innerHTML = list;
+        }
+    </script>
+
+</body>
+
+</html>
+
+<!-- Imam Muzaki Dukuh Benda RT.01 RW.02 Desa Cilibur paguyangan, Brebes, Jateng 52276 -->
