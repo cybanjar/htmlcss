@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+
+<body>
+
+    <h2>JavaScript Arrays</h2>
+
+    <p>The Array.keys() method returns an Array Iterator object with the keys of the array.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let ranks = ['a', 'b', 'c'];
+        // for (let i = 0; i < ranks.length; i++) {
+        //     console.log(ranks[i]);
+        // }
+
+        for (const rank of ranks) {
+            console.log(rank);
+        }
+    </script>
+</body>
+
+</html>
