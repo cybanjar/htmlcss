@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switvh</title>
+</head>
+<body>
+    <script>
+        let browser = prompt("Enter a browser?f");
+
+        if (browser == 'Edge') {
+            console.log('GOT EDGE');
+        } else if(browser == 'Chrome' || 'Firefox', 'Safari', 'Opera'){
+            console.log('Okay support Opera');
+        } else {
+            console.log('No looks Ok!');
+        }
+
+        switch (browser) {
+            case 'Edge':
+                console.log('got the Edge')
+                break;
+            case 'Chrome':
+            case 'Firefox':
+            case 'Safari':
+            case 'Opera':
+                console.log('Okay suppoer Opera');
+                break;
+        
+            default:
+                console.log('No looks ok');
+        }
+    </script>
+</body>
+</html>
